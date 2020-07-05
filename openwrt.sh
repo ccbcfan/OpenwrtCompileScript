@@ -224,7 +224,7 @@ download_package_luci() {
 	echo ""
 	echo " 		  1. luci-theme-argon"
 	echo ""
-	echo "		  2. luci-app-oaf （测试中）"
+	echo "		  2. luci-app-oaf、passwall等其他各类插件 （测试中）"
 	echo ""
 	echo "		  99. 自定义下载插件 "
 	echo ""
@@ -238,7 +238,7 @@ download_package_luci() {
 		git clone https://github.com/jerrykuku/luci-theme-argon.git
 		;;
 		2)
-		git clone https://github.com/destan19/OpenAppFilter.git
+		git clone https://github.com/destan19/OpenAppFilter.git && git clone https://github.com/kenzok8/small && git clone https://github.com/kenzok8/openwrt-packages 
 		;;
 		99)
 		download_package_customize
